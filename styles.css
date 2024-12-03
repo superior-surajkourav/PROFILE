@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: red;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+h1 {
+    margin-top: 50px;
+    font-size: 3rem;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.highlight {
+    background-color: yellow;
+    color: black;
+}
+
+.search-container {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#searchBar {
+    padding: 10px;
+    font-size: 1rem;
+    width: 300px;
+}
+
+.search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.three-dot-menu {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+    color: blue;
+}
+
+.menu-content {
+    display: none;
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    text-align: center;
+}
+
+.menu-content img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.menu-content h3 {
+    margin: 5px 0;
+}
+
+.menu-content button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.menu-content button:hover {
+    background-color: darkred;
+}
+
+/* Style each .content block as a box */
+.content {
+    border: 2px solid black; /* Border for the box */
+    border-radius: 5px; /* Rounded corners */
+    padding: 20px; /* Inner padding */
+    margin: 20px auto; /* Space between boxes and centering */
+    background-color: white; /* Box background color */
+    color: black; /* Text color */
+    max-width: 600px; /* Maximum width for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+/* Additional optional page styling */
+body {
+    background-color: red; /* Page background */
+    font-family: Arial, sans-serif; /* Font style */
+    color: white; /* Default text color */
+}
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: red; /* Updated background color */
+    color: white; /* Adjusted text color for contrast */
+    text-align: center;
+}
+
+/* Page Heading */
+h1 {
+    margin-top: 20px;
+    color: #fff; /* Heading text color */
+}
+
+/* Profile Card Styles */
+.profile-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 20px auto;
+    padding: 15px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    max-width: 600px;
+    background-color: #fff;
+    color: #333;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    overflow: hidden;
+}
+
+/* Profile Picture Styles */
+.profile-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+/* Profile Card Content Styles */
+.profile-card-content {
+    flex: 1;
+}
+
+.profile-card-content p {
+    margin: 5px 0;
+}
+
+/* Contact Button Styles */
+.profile-card-content a button {
+    margin-top: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.profile-card-content a button:hover {
+    background-color: #0056b3;
+}
+/* Profile image styles */
+.profile-card img.profile-image {
+    width: 100px; /* Initial size */
+    height: 100px; /* Initial size */
+    border-radius: 50%; /* Circular shape */
+    cursor: pointer; /* Change cursor to pointer (hand) */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+/* Enlarge the image to a fixed 3:5 ratio (e.g., 300x500px) when clicked */
+.profile-card img.profile-image.enlarged {
+    width: 300px; /* Set width to 300px (3:5 ratio) */
+    height: 500px; /* Set height to 500px (3:5 ratio) */
+    border-radius: 10px; /* Optional: Add border radius to make the enlarged image have rounded corners */
+    object-fit: cover; /* Ensure the image covers the area without distorting */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Add shadow to make it stand out */
+    z-index: 1000; /* Ensure the image appears on top of other elements */
+    margin: 0 auto; /* Center the image */
+    display: block; /* Make sure it behaves like a block-level element */
+}
+
